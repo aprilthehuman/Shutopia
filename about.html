@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!--css-->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!--W3-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <style>
+    .badge {
+      font-size: 1rem; 
+    }
+  </style>
+
+</head>
+
+<body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+
+  <div class="w3-bar-block" style="margin-top:150px">
+    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-hover-white">About</a> 
+    <a href="./experience.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Experience</a> 
+    <a href="./contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a> 
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+<!-- Header -->
+  <div class="w3-container" style="margin-top:80px">
+    <h1 class="w3-jumbo titleMain" style="text-align:center"><b>About Me</b></h1>
+  </div>
+  
+<!--Badges-->
+<div class="d-flex gap-2 justify-content-center pt-5 ">
+  <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill" style="text-decoration: none"><a href="#EducationWorkExperience">Education / Work Experience</a></span>
+  <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"><a href="#AchievementsSkills">Achievements / Skills</a></span>
+  <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill"><a href="#MotivePhilosophy">Motive / Philosophy</a></span>
+</div>
+
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding" style="display: flex; justify-content: center;">
+    <div class="w3-half" style="display: flex; justify-content:center ;">
+      <img id="roadImg" src="./img/road.jpg" style="width: 600px; border-radius: 25px; margin-top: 50px;";onclick="onClick(this)" alt="Concrete meets bricks">
+    </div>
+  </div>
+
+
+
+<!-- Education / Work Experiencen -->
+  <div class="w3-container" id="EducationWorkExperience" style="margin-top:100px;">
+    <h1 class="w3-xxxlarge w3-text-red redTitle" style="text-align:center"><b>Education / Work Experience</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <div class="container" id="grid-container-work" style="display: grid; grid-template-columns: 1fr;">
+    <div class="content" style="width:100%; justify-content: center; align-items: center; text-align: justify; padding: 30px 100px; font-size: 1.3rem;">
+      <p>　　I am currently working as a project assistant at <b>Feng Chia University</b>, managing two key projects. The first focuses on supporting factories with automation, smart manufacturing, and low-carbon transformation, as well as securing government resources. The second is the Bilingual Program, where I assess the needs of different colleges, help resolve current challenges, allocate resources efficiently, and establish regulations for long-term development.</p>
+      <hr style="background-color:#C1D8C3;height: 6px; border-radius: 30px; margin-top: 50px;margin-bottom: 50px;"/>
+      <p>　　Previously, I worked as a Human Resources Specialist at <b>AUO</b> in Taichung, where I managed brokers, dormitory supervisors, and oversaw migrant workers. I also organized events and projects, coordinated cross-departmental requests, and handled unexpected situations. Through these experiences, I developed strong time management, upward management, cross-departmental communication, and problem-solving skills, along with the ability to effectively gather and synthesize information.</p>
+      <hr style="background-color:#C1D8C3;height: 6px; border-radius: 30px; margin-top: 50px;margin-bottom: 50px;"/>
+      <p>　　I graduated from <b>National Central University</b> with a Master’s Degree in Human Resource Management. As an outstanding student, I was nominated for the Outstanding Student Scholarship by my professor. During my studies, I served as the editor for the university’s Facebook fan page, where I designed highly attractive media content and visual designs that made me feel accomplished. Additionally, I worked as a TA for the MBA class and was praised for my ability to understand people’s needs and build great relationships with the students. I was also known for identifying overlooked problems and making better recommendations to improve our overall performance in group projects.</p>
+      <hr style="background-color:#C1D8C3;height: 6px; border-radius: 30px;"/>
+      <p>　　As a master's degree student, I worked as an intern in the Human Resources Department of <b>ITRI</b>, where I was responsible for recruiting talents. This experience taught me how to identify talents and help managers place the right person in the right role.</p>
+      <hr style="background-color:#C1D8C3;height: 6px; border-radius: 30px; margin-top: 50px;margin-bottom: 50px;"/>
+      <p>　　I earned my bachelor’s degree in psychology from <b>Chung Yuan Christian University</b>. During my time there, I joined the Taekwondo club and, under the coach’s guidance, placed third in one of the competitions despite having no prior experience. Additionally, I gained experience in planning and organizing events for the club and our school department.</p>
+      <hr style="background-color:#C1D8C3;height: 6px; border-radius: 30px; margin-top: 50px;margin-bottom: 50px;"/>
+      <p>　　In my sophomore year of college, I worked part-time at <b>McDonald's</b> on campus, which helped me develop the ability to work and manage tough situations under pressure. I also worked as an elementary school tutor, which enhanced my communication skills and taught me to identify which parts of the content students have trouble understanding.</p>
+    </div>
+
+    
+
+<!-- Achievements / Skills -->
+
+  <div class="w3-container" id="AchievementsSkills" style="margin-top:60px;">
+    <h1 class="w3-xxxlarge w3-text-red redTitle" style="text-align:center"><b>Achievements / Skills</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <div class="container" id="grid-container-work" style="display: grid; grid-template-columns: 1fr;">
+    <div class="content" style="width: 100%; justify-content: center; align-items: center;text-align: justify; padding: 30px 100px; font-size: 1.3rem;">
+      <p>　　As an international student, I enrolled in <b>UC Irvine's ESL Program</b> for six months to challenge myself and improve my English skills. This experience provided me with opportunities to interact with peers from diverse backgrounds, navigate everyday challenges, and explore new places. During these times, I developed a strong interest in <b>User Experience Design</b> and <b>Web Development</b>. I am now taking the initiative to pursue self-directed learning in these areas, as I believe this knowledge will enhance my ability to approach human resource challenges from a multidisciplinary perspective.</p>
+      <hr style="background-color:#C1D8C3;height: 6px; border-radius: 30px; margin-top: 50px;margin-bottom: 50px;"/>
+      <p>　　Throughout my master's program, I have gained valuable skills in critical thinking and problem-solving, which have been particularly rewarding. I have always been drawn to challenging situations and strive to find creative solutions. For instance, while managing the <b>HR Department's Facebook fan page</b>, I learned to approach content from the perspective of the audience, identifying what they want to see and crafting engaging posts accordingly. Additionally, as a <b>teaching assistant in the MBA program</b>, I discovered the importance of sincerity and diligence in building strong relationships with students and colleagues.</p>
+      <hr style="background-color:#C1D8C3;height: 6px; border-radius: 30px; margin-top: 50px;margin-bottom: 50px;"/>
+      <p>　　I had been responsible for creating construction drawings using <b>AutoCAD</b> at Heng-Yong Structural Engineering Associates. This experience has been both challenging and fulfilling, as it allowed me to explore new areas and develop my technical skills. I have also learned the value of discipline and hard work in acquiring new knowledge, even when it initially seems daunting.</p>
+      <hr style="background-color:#C1D8C3;height: 6px; border-radius: 30px; margin-top: 50px;margin-bottom: 50px;"/>
+      <p>　　As someone who loves to travel and values cross-cultural connections, I am dedicated to improving my language skills. In addition to refining my English proficiency, I am currently learning <b>Korean</b> as a second foreign language. In 2018, I planned a trip to Korea with a friend and took charge of communicating with locals and navigating any challenges that arose. This experience not only allowed me to hone my language skills but also gave me a sense of accomplishment.</p>
+    </div>
+
+
+<!-- Motive / Philosophy -->
+
+  <div class="w3-container" id="MotivePhilosophy" style="margin-top:60px;">
+    <h1 class="w3-xxxlarge w3-text-red redTitle" style="text-align:center"><b>Motive / Philosophy</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <div class="container" id="grid-container-work" style="display: grid; grid-template-columns: 1fr;">
+    <div class="content" style="width: 100%; justify-content: center; align-items: center;text-align: justify; padding: 30px 100px; font-size: 1.3rem; margin-bottom: 70px;">
+      <p>　　As a professional in the human resource field, I firmly believe that my background in psychology gives me a unique advantage in understanding the needs and motivations of my partners and customers. With a keen eye for observation and a sensitivity to individual differences, I strive to create an inclusive and supportive workplace culture that enables everyone to thrive.</p>
+      <hr style="background-color:#C1D8C3;height: 6px; border-radius: 30px; margin-top: 50px;margin-bottom: 50px;"/>
+      <p>　　Looking ahead, I am excited about the prospect of <b>expanding my horizons and working abroad</b> in the future. By immersing myself in new cultures and environments, I hope to bring back valuable insights and perspectives that will help me solve problems and optimize operational processes for the benefit of the company and its stakeholders.</p>
+      <hr style="background-color:#C1D8C3;height: 6px; border-radius: 30px; margin-top: 50px;margin-bottom: 50px;"/>
+      <p>　　In order to achieve these goals, I am committed to <b>continuous learning</b> and <b>maintaining a growth mindset</b>. I believe that being adaptable and observant of environmental changes are crucial qualities for success in the dynamic human resource industry.</p>
+    </div>
+
+  <div style="display: flex; justify-content: center;">
+      <img src="./img/2.png" style="height: 150px;">
+  </div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+    
+</body>
+</html>
