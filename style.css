@@ -1,0 +1,212 @@
+body {
+
+    background-color: #FFFADD !important;
+    font-family: "Atkinson Hyperlegible", system-ui !important;
+    text-align: center;
+}
+
+p {
+    margin: 0 !important;
+}
+
+h1 {
+    font-family: "League Spartan", system-ui !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+}
+
+.grid-container {
+    display: grid;
+    height: 60vh;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    margin-top: 70px;
+    margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
+} 
+
+#circleImg {
+    width:500px;
+    position: absolute;
+    top:150px;
+
+}
+
+#arrowImg {
+    width: 200px;
+    position: absolute;
+    top: 250px;
+    right: 150px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#name {
+    grid-row-start: 3;  
+    padding-left: 50px;
+}
+
+
+
+.item-photo {
+    padding: 0px 20px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#intro {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+
+.dropdown {
+    background-color:#C1D8C3;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn.dropdown-toggle {
+    font-size: 1.4rem;
+    padding-bottom: 0;
+}
+
+
+a { text-decoration:underline !important} ;
+a:hover { text-decoration:none !important}
+
+@media (max-width:1400px) {
+    #circleImg {
+        width:350px;
+        position: absolute;
+        top:180px;
+        left: -25px;
+    }
+
+    #arrowImg {
+        width: 100px;
+        position: absolute;
+        top: 250px;
+        right: 100px;
+    }
+
+}
+
+
+
+@media (max-width:1200px) {
+    .mainImg {
+        padding: 30px 40px !important;
+    }
+    #roadImg {
+        width: 400px;
+    }
+
+    
+    .content {
+        padding: 30px 40px !important;
+    }
+
+    #circleImg {
+        height: 200px;
+        width:250px;
+        position: absolute;
+        top:150px;
+        left: -10px;
+    }
+
+    #arrowImg {
+        width: 100px;
+        position: absolute;
+        top: 250px;
+        right: 100px;
+    }
+    #contact {
+        width: 50% !important;
+    }
+
+}
+
+@media (max-width:765px) {
+    .content {
+        padding: 30px 40px !important;
+    }
+
+    #name {
+        position: absolute;
+        width: 100px;
+        bottom:100px;
+        right:400px
+    }
+    #intro {
+        position: absolute;
+        top: -80px;
+        left: 85px;
+    }   
+
+    #circleImg {
+        display: none;
+        height: 260px;
+        width:220px;
+        position: absolute;
+        top:120px;
+        left:-130px;
+    }
+
+    #arrowImg {
+        width: 100px;
+        position: absolute;
+        top: 250px;
+        left: 400px;
+    }
+
+    #contact {
+        width: 60% !important;
+    }
+
+}
+
+@media (max-width:576px) {
+    .content {
+        padding: 30px 40px !important;
+    }
+    #name {
+        display: none;
+    }
+    #intro {
+        display: none;
+    }
+    #circleImg {
+        display: none;
+    }
+    #arrowImg {
+         display: none;
+    }
+    #footerContact {
+        display: none;
+    }
+    #header {
+        margin-bottom:0 !important;
+        padding-bottom:0 !important;
+    }
+    #contact {
+        width: 70% !important;
+    }
+}
+
+
+
+a { 
+    text-decoration:none !important
+} 
+a:hover {
+    text-decoration:underline !important
+}
